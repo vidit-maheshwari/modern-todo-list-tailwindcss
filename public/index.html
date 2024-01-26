@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+    
+    <title>To Do List</title>
+</head>
+<body style="background-image: url('../images/aesthetic-iron-man-marvel-desktop-wallpaper-preview.jpg');">
+
+    <div class="flex justify-center bg-white min-h-[200px] w-[450px] truncate mx-auto mt-52 border-spacing-1 rounded-2xl border-2 border-slate-500 shadow-slate-950">
+
+        <!-- CARD STARTING -->
+
+        <div id="Card" class="">
+            <!-- HEADING STARTING -->
+            <div class="">
+                <h1 class="flex text-3xl font-bold mt-4 ">To Do List <img src="../images/to-do-list-icon.png" alt="" class="w-12 h-18 ml-8"></h1>
+            </div>
+            <!-- HEADING ENDING -->
+
+            <!-- INPUT BOX -->
+            <div class="mt-6">
+                <input type="text" placeholder="Enter Your Tasks" class="border-slate-500 border-2 rounded-lg p-[8px]" id="input-box">
+
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 " onclick="addTask()">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"">
+                   ADD 
+                    </span>
+                </button>
+            </div>
+
+            <!-- LIST ITEMS  -->
+            <div >
+                <ul class="flex-col " id="list-container">
+                    <!-- <li class="checked p-2 text-lg font-semibold flex line-through" id="note"><img src="../images/checked_icon.png" alt=""  class="h-5 w-5 mt-1 mr-2">Task 1</li>
+                    <li class="p-2 text-lg font-semibold flex"><img src="../images/unchecked_icon.png" alt="" class="h-5 w-5 mt-1 mr-2">Task 2</li>
+                    <li class="p-2 mb-5 text-lg font-semibold flex"><img src="../images/unchecked_icon.png" alt="" class="h-5 w-5 mt-1 mr-2">Task 3</li> -->
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bg-purple-500 flex justify-center mb-0 mt-72 border-2 border-white">
+        <h1 class="text-white text-xl font-bold">Made With ❤️ By Vidit Maheshwari</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
